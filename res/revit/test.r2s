@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<project xmlns="http://www.scia.cz">
+   
+   <def uri="R2S_Steel1D_01.r2s.def"/>
+   
+   <container id="{AC021036-C943-4B46-88E4-72CFB9D9391C}" t="EP_GraphicDsObjects.EP_BaseDataProjectHeader.1">
+      <table id="8055E4F1-2FE5-47D8-9A5A-74358CF1D42B" t="ProjectData.EP_ProjectData.1" name="Project">
+         <h>
+            <h0 t="Licence name"/>
+            <h1 t="National code"/>
+            <h2 t="Version"/>
+            <h3 t="Structure"/>
+            <h4 t="No. of nodes :"/>
+            <h5 t="No. of beams :"/>
+            <h6 t="No. of slabs :"/>
+            <h7 t="No. of used profiles :"/>
+            <h8 t="No. of load cases :"/>
+            <h9 t="No. of used materials :"/>
+            <h10 t="Project"/>
+            <h11 t="Part"/>
+            <h12 t="Description"/>
+            <h13 t="Author"/>
+            <h14 t="Date"/>
+            <h15 t="Acceleration of gravity"/>
+            <h16 t="Concrete"/>
+            <h17 t="Steel"/>
+            <h18 t="Timber"/>
+            <h19 t="Other material"/>
+            <h20 t="Functionality"/></h>
+         <obj id="1">
+            <p0 v="Scia"/>
+            <p1 v="EC - EN"/>
+            <p2 v="Scia Engineer 13.0.2027"/>
+            <p3 v="8" t="General XYZ"/>
+            <p4 v="77"/>
+            <p5 v="28"/>
+            <p6 v="0"/>
+            <p7 v="6"/>
+            <p8 v="0"/>
+            <p9 v="1"/>
+            <p10 v="-"/>
+            <p11 v="-"/>
+            <p12 v="-"/>
+            <p13 v="Oscar Wieggers"/>
+            <p14 v="30. 09. 2008"/>
+            <p15 v="9.81"/>
+            <p16 v="0"/>
+            <p17 v="1"/>
+            <p18 v="0"/>
+            <p19 v="0"/>
+            <p20 v="Steel "/></obj>
+      </table>
+   </container>
+   
+   <container id="{77705284-EEB9-11D4-B450-00104BC3B531}" t="EP_Material.EP_Material.1">
+      <table id="18B6AE64-755E-4903-8ADD-B0E518C016FD" t="EP_MaterialEC.EP_MaterialSteelEC.1" name="Materials">
+         <h>
+            <h0 t="Name"/>
+            <h1 t="Material type"/>
+            <h2 t="Thermal expansion "/>
+            <h3 t="Unit mass"/>
+            <h4 t="E modulus"/>
+            <h5 t="Poisson coeff."/>
+            <h6 t="Independent G modulus"/>
+            <h7 t="G modulus"/>
+            <h8 t="Log. decrement"/>
+            <h9 t="Colour"/>
+            <h10 t="Thermal expansion (for fire resistance) "/>
+            <h11 t="Specific heat"/>
+            <h12 t="Thermal conductivity"/>
+            <h13 t="Ultimate strength"/>
+            <h14 t="Yield strength"/></h>
+         <obj id="1" nm="S 235">
+            <p0 v="S 235"/>
+            <p1 v="Steel"/>
+            <p2 v="1.2e-005"/>
+            <p3 v="7850"/>
+            <p4 v="2.1e+011"/>
+            <p5 v="0.3"/>
+            <p6 v="0"/>
+            <p7 v="8.076923077e+010"/>
+            <p8 v="0.15"/>
+            <p9 v="0"/>
+            <p10 v="0.00014"/>
+            <p11 v="600"/>
+            <p12 v="45"/>
+            <p13 v="360000000"/>
+            <p14 v="235000000"/></obj>
+      </table>
+   </container>
+   
+   <container id="{2127A9B3-36BD-11D4-B337-00104BC3B531}" t="CrossSection.EP_CrossSection.1">
+      <table id="94B09309-7A24-4052-AB74-0DA64917CFA1" t="CrossSection.EP_CssGeometry.1" name="Cross-sections">
+         <h>
+            <h0 t="Name"/>
+            <h1 t="Type"/>
+            <h2 t="Catalog ID"/>
+            <h3 t="Catalog item"/>
+            <h4 t="Parameters"/></h>
+         <obj id="8" nm="CS8">
+            <p0 v="CS8"/>
+            <p1 v="HE200B"/>
+            <p2 v="EP_CssLib.EP_ProfLib_Rolled.1"/>
+            <p3 v="1"/>
+            <p4 t="">
+            <h>
+            <h0 t="Name"/>
+            <h1 t="Material"/>
+            <h5 t="Rolled section"/>
+            </h>
+            <row id="0">
+            <p0 v="Material"/>
+            <p1 i="1" n="S 235"/>
+            </row>
+            <row id="1">
+            <p0 v="I sections"/>
+            <p5 v="HE200B|1"/>
+            </row>
+            </p4></obj>
+         
+         <obj id="9" nm="CS9">
+            <p0 v="CS9"/>
+            <p1 v="SHS(Ce)200/200/10.0"/>
+            <p2 v="EP_CssLib.EP_ProfLib_Rolled.1"/>
+            <p3 v="2"/>
+            <p4 t="">
+            <h>
+            <h0 t="Name"/>
+            <h1 t="Material"/>
+            <h5 t="Rolled section"/>
+            </h>
+            <row id="0">
+            <p0 v="Material"/>
+            <p1 i="1" n="S 235"/>
+            </row>
+            <row id="1">
+            <p0 v="Hollow sections"/>
+            <p5 v="SHS(Ce)200/200/10.0|2"/>
+            </row>
+            </p4></obj>
+         
+         <obj id="10" nm="CS10">
+            <p0 v="CS10"/>
+            <p1 v="HFLeq200x200x16"/>
+            <p2 v="EP_CssLib.EP_ProfLib_Rolled.1"/>
+            <p3 v="1002"/>
+            <p4 t="">
+            <h>
+            <h0 t="Name"/>
+            <h1 t="Material"/>
+            <h5 t="Rolled section"/>
+            </h>
+            <row id="0">
+            <p0 v="Material"/>
+            <p1 i="1" n="S 235"/>
+            </row>
+            <row id="1">
+            <p0 v="Minus L sections"/>
+            <p5 v="HFLeq200x200x16|1002"/>
+            </row>
+            </p4></obj>
+         
+         <obj id="11" nm="CS11">
+            <p0 v="CS11"/>
+            <p1 v="CHS193.7/10.0"/>
+            <p2 v="EP_CssLib.EP_ProfLib_Rolled.1"/>
+            <p3 v="3"/>
+            <p4 t="">
+            <h>
+            <h0 t="Name"/>
+            <h1 t="Material"/>
+            <h5 t="Rolled section"/>
+            </h>
+            <row id="0">
+            <p0 v="Material"/>
+            <p1 i="1" n="S 235"/>
+            </row>
+            <row id="1">
+            <p0 v="Tube sections"/>
+            <p5 v="CHS193.7/10.0|3"/>
+            </row>
+            </p4></obj>
+         
+         <obj id="12" nm="CS12">
+            <p0 v="CS12"/>
+            <p1 v="UPE200"/>
+            <p2 v="EP_CssLib.EP_ProfLib_Rolled.1"/>
+            <p3 v="5"/>
+            <p4 t="">
+            <h>
+            <h0 t="Name"/>
+            <h1 t="Material"/>
+            <h5 t="Rolled section"/>
+            </h>
+            <row id="0">
+            <p0 v="Material"/>
+            <p1 i="1" n="S 235"/>
+            </row>
+            <row id="1">
+            <p0 v="Channel sections"/>
+            <p5 v="UPE200|5"/>
+            </row>
+            </p4></obj>
+         
+         <obj id="13" nm="CS13">
+            <p0 v="CS13"/>
+            <p1 v="HEBT200"/>
+            <p2 v="EP_CssLib.EP_ProfLib_Rolled.1"/>
+            <p3 v="6"/>
+            <p4 t="">
+            <h>
+            <h0 t="Name"/>
+            <h1 t="Material"/>
+            <h5 t="Rolled section"/>
+            </h>
+            <row id="0">
+            <p0 v="Material"/>
+            <p1 i="1" n="S 235"/>
+            </row>
+            <row id="1">
+            <p0 v="T sections"/>
+            <p5 v="HEBT200|6"/>
+            </row>
+            </p4></obj>
+      </table>
+   </container>
+   
+   <container id="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" t="EP_DSG_Elements.EP_StructNode.1">
+      <table id="770BB6FB-B921-4EDA-A63B-554DBBE9A860" t="EP_DSG_Elements.EP_StructNode.1" name="Node">
+         <h>
+            <h0 t="Name"/>
+            <h1 t="Coord X"/>
+            <h2 t="Coord Y"/>
+            <h3 t="Coord Z"/></h>
+         <obj id="1" nm="N1">
+            <p0 v="N1"/>
+            <p1 v="0"/>
+            <p2 v="0"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="2" nm="N2">
+            <p0 v="N2"/>
+            <p1 v="6"/>
+            <p2 v="0"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="3" nm="N3">
+            <p0 v="N3"/>
+            <p1 v="9"/>
+            <p2 v="0"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="4" nm="N4">
+            <p0 v="N4"/>
+            <p1 v="9"/>
+            <p2 v="0"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="5" nm="N5">
+            <p0 v="N5"/>
+            <p1 v="12"/>
+            <p2 v="0"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="6" nm="N6">
+            <p0 v="N6"/>
+            <p1 v="18"/>
+            <p2 v="0"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="7" nm="N7">
+            <p0 v="N7"/>
+            <p1 v="21"/>
+            <p2 v="0"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="8" nm="N8">
+            <p0 v="N8"/>
+            <p1 v="27"/>
+            <p2 v="0"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="9" nm="N9">
+            <p0 v="N9"/>
+            <p1 v="33"/>
+            <p2 v="0"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="10" nm="N10">
+            <p0 v="N10"/>
+            <p1 v="0"/>
+            <p2 v="3"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="11" nm="N11">
+            <p0 v="N11"/>
+            <p1 v="6"/>
+            <p2 v="3"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="12" nm="N12">
+            <p0 v="N12"/>
+            <p1 v="9"/>
+            <p2 v="3"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="13" nm="N13">
+            <p0 v="N13"/>
+            <p1 v="9"/>
+            <p2 v="3"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="14" nm="N14">
+            <p0 v="N14"/>
+            <p1 v="12"/>
+            <p2 v="3"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="15" nm="N15">
+            <p0 v="N15"/>
+            <p1 v="18"/>
+            <p2 v="3"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="16" nm="N16">
+            <p0 v="N16"/>
+            <p1 v="21"/>
+            <p2 v="3"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="17" nm="N17">
+            <p0 v="N17"/>
+            <p1 v="27"/>
+            <p2 v="3"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="18" nm="N18">
+            <p0 v="N18"/>
+            <p1 v="33"/>
+            <p2 v="3"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="19" nm="N19">
+            <p0 v="N19"/>
+            <p1 v="0"/>
+            <p2 v="6"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="20" nm="N20">
+            <p0 v="N20"/>
+            <p1 v="6"/>
+            <p2 v="6"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="21" nm="N21">
+            <p0 v="N21"/>
+            <p1 v="9"/>
+            <p2 v="6"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="22" nm="N22">
+            <p0 v="N22"/>
+            <p1 v="9"/>
+            <p2 v="6"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="23" nm="N23">
+            <p0 v="N23"/>
+            <p1 v="12"/>
+            <p2 v="6"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="24" nm="N24">
+            <p0 v="N24"/>
+            <p1 v="18"/>
+            <p2 v="6"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="25" nm="N25">
+            <p0 v="N25"/>
+            <p1 v="21"/>
+            <p2 v="6"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="26" nm="N26">
+            <p0 v="N26"/>
+            <p1 v="27"/>
+            <p2 v="6"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="27" nm="N27">
+            <p0 v="N27"/>
+            <p1 v="33"/>
+            <p2 v="6"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="28" nm="N28">
+            <p0 v="N28"/>
+            <p1 v="0"/>
+            <p2 v="9"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="29" nm="N29">
+            <p0 v="N29"/>
+            <p1 v="6"/>
+            <p2 v="9"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="30" nm="N30">
+            <p0 v="N30"/>
+            <p1 v="9"/>
+            <p2 v="9"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="31" nm="N31">
+            <p0 v="N31"/>
+            <p1 v="9"/>
+            <p2 v="9"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="32" nm="N32">
+            <p0 v="N32"/>
+            <p1 v="12"/>
+            <p2 v="9"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="33" nm="N33">
+            <p0 v="N33"/>
+            <p1 v="18"/>
+            <p2 v="9"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="34" nm="N34">
+            <p0 v="N34"/>
+            <p1 v="21"/>
+            <p2 v="9"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="35" nm="N35">
+            <p0 v="N35"/>
+            <p1 v="27"/>
+            <p2 v="9"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="36" nm="N36">
+            <p0 v="N36"/>
+            <p1 v="33"/>
+            <p2 v="9"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="37" nm="N37">
+            <p0 v="N37"/>
+            <p1 v="0"/>
+            <p2 v="12"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="38" nm="N38">
+            <p0 v="N38"/>
+            <p1 v="6"/>
+            <p2 v="12"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="39" nm="N39">
+            <p0 v="N39"/>
+            <p1 v="9"/>
+            <p2 v="12"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="40" nm="N40">
+            <p0 v="N40"/>
+            <p1 v="9"/>
+            <p2 v="12"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="41" nm="N41">
+            <p0 v="N41"/>
+            <p1 v="12"/>
+            <p2 v="12"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="42" nm="N42">
+            <p0 v="N42"/>
+            <p1 v="18"/>
+            <p2 v="12"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="43" nm="N43">
+            <p0 v="N43"/>
+            <p1 v="21"/>
+            <p2 v="12"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="44" nm="N44">
+            <p0 v="N44"/>
+            <p1 v="27"/>
+            <p2 v="12"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="45" nm="N45">
+            <p0 v="N45"/>
+            <p1 v="33"/>
+            <p2 v="12"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="46" nm="N46">
+            <p0 v="N46"/>
+            <p1 v="0"/>
+            <p2 v="15"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="47" nm="N47">
+            <p0 v="N47"/>
+            <p1 v="6"/>
+            <p2 v="15"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="48" nm="N48">
+            <p0 v="N48"/>
+            <p1 v="9"/>
+            <p2 v="15"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="49" nm="N49">
+            <p0 v="N49"/>
+            <p1 v="9"/>
+            <p2 v="15"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="50" nm="N50">
+            <p0 v="N50"/>
+            <p1 v="12"/>
+            <p2 v="15"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="51" nm="N51">
+            <p0 v="N51"/>
+            <p1 v="18"/>
+            <p2 v="15"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="52" nm="N52">
+            <p0 v="N52"/>
+            <p1 v="21"/>
+            <p2 v="15"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="53" nm="N53">
+            <p0 v="N53"/>
+            <p1 v="27"/>
+            <p2 v="15"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="54" nm="N54">
+            <p0 v="N54"/>
+            <p1 v="33"/>
+            <p2 v="15"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="55" nm="N55">
+            <p0 v="N55"/>
+            <p1 v="0"/>
+            <p2 v="18"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="56" nm="N56">
+            <p0 v="N56"/>
+            <p1 v="6"/>
+            <p2 v="18"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="57" nm="N57">
+            <p0 v="N57"/>
+            <p1 v="9"/>
+            <p2 v="18"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="58" nm="N58">
+            <p0 v="N58"/>
+            <p1 v="9"/>
+            <p2 v="18"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="59" nm="N59">
+            <p0 v="N59"/>
+            <p1 v="12"/>
+            <p2 v="18"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="60" nm="N60">
+            <p0 v="N60"/>
+            <p1 v="18"/>
+            <p2 v="18"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="61" nm="N61">
+            <p0 v="N61"/>
+            <p1 v="21"/>
+            <p2 v="18"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="62" nm="N62">
+            <p0 v="N62"/>
+            <p1 v="27"/>
+            <p2 v="18"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="63" nm="N63">
+            <p0 v="N63"/>
+            <p1 v="33"/>
+            <p2 v="18"/>
+            <p3 v="0"/></obj>
+         
+         <obj id="64" nm="N64">
+            <p0 v="N64"/>
+            <p1 v="27"/>
+            <p2 v="0"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="65" nm="N65">
+            <p0 v="N65"/>
+            <p1 v="27"/>
+            <p2 v="3"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="66" nm="N66">
+            <p0 v="N66"/>
+            <p1 v="27"/>
+            <p2 v="6"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="67" nm="N67">
+            <p0 v="N67"/>
+            <p1 v="27"/>
+            <p2 v="9"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="68" nm="N68">
+            <p0 v="N68"/>
+            <p1 v="27"/>
+            <p2 v="12"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="69" nm="N69">
+            <p0 v="N69"/>
+            <p1 v="27"/>
+            <p2 v="15"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="70" nm="N70">
+            <p0 v="N70"/>
+            <p1 v="27"/>
+            <p2 v="18"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="71" nm="N71">
+            <p0 v="N71"/>
+            <p1 v="27"/>
+            <p2 v="0"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="72" nm="N72">
+            <p0 v="N72"/>
+            <p1 v="27"/>
+            <p2 v="3"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="73" nm="N73">
+            <p0 v="N73"/>
+            <p1 v="27"/>
+            <p2 v="6"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="74" nm="N74">
+            <p0 v="N74"/>
+            <p1 v="27"/>
+            <p2 v="9"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="75" nm="N75">
+            <p0 v="N75"/>
+            <p1 v="27"/>
+            <p2 v="12"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="76" nm="N76">
+            <p0 v="N76"/>
+            <p1 v="27"/>
+            <p2 v="15"/>
+            <p3 v="6"/></obj>
+         
+         <obj id="77" nm="N77">
+            <p0 v="N77"/>
+            <p1 v="27"/>
+            <p2 v="18"/>
+            <p3 v="6"/></obj>
+      </table>
+   </container>
+   
+   <container id="{ECB5D684-7357-11D4-9F6C-00104BC3B443}" t="EP_DSG_Elements.EP_Beam.1">
+      <table id="10D7D063-597F-4469-A959-BD4D2E587450" t="EP_DSG_Elements.EP_Beam.1" name="Member 1D">
+         <h>
+            <h0 t="Name"/>
+            <h1 t="Shape"/>
+            <h2 t="Beg. node"/>
+            <h3 t="End node"/>
+            <h4 t="CrossSection"/>
+            <h5 t="FEM type"/>
+            <h6 t="Member system-line at"/>
+            <h7 t="LCS Rotation"/>
+            <h8 t="ey"/>
+            <h9 t="ez"/>
+            <h10 t="Type"/>
+            <h11 t="Inner nodes"/></h>
+         <obj id="1" nm="B1">
+            <p0 v="B1"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="1" n="N1"/>
+            <p3 i="2" n="N2"/>
+            <p4 i="8" n="CS8 - HE200B"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="2" nm="B2">
+            <p0 v="B2"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="3" n="N3"/>
+            <p3 i="4" n="N4"/>
+            <p4 i="8" n="CS8 - HE200B"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="3" nm="B3">
+            <p0 v="B3"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="5" n="N5"/>
+            <p3 i="6" n="N6"/>
+            <p4 i="8" n="CS8 - HE200B"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="4" nm="B4">
+            <p0 v="B4"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="7" n="N7"/>
+            <p3 i="9" n="N9"/>
+            <p4 i="8" n="CS8 - HE200B"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="0" v3="6"/></obj>
+         
+         <obj id="5" nm="B5">
+            <p0 v="B5"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="10" n="N10"/>
+            <p3 i="11" n="N11"/>
+            <p4 i="9" n="CS9 - SHS200/200/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="6" nm="B6">
+            <p0 v="B6"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="12" n="N12"/>
+            <p3 i="13" n="N13"/>
+            <p4 i="9" n="CS9 - SHS200/200/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="7" nm="B7">
+            <p0 v="B7"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="14" n="N14"/>
+            <p3 i="15" n="N15"/>
+            <p4 i="9" n="CS9 - SHS200/200/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="8" nm="B8">
+            <p0 v="B8"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="16" n="N16"/>
+            <p3 i="18" n="N18"/>
+            <p4 i="9" n="CS9 - SHS200/200/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="3" v3="6"/></obj>
+         
+         <obj id="9" nm="B9">
+            <p0 v="B9"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="19" n="N19"/>
+            <p3 i="20" n="N20"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="10" nm="B10">
+            <p0 v="B10"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="21" n="N21"/>
+            <p3 i="22" n="N22"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="11" nm="B11">
+            <p0 v="B11"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="23" n="N23"/>
+            <p3 i="24" n="N24"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="12" nm="B12">
+            <p0 v="B12"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="25" n="N25"/>
+            <p3 i="27" n="N27"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="6" v3="6"/></obj>
+         
+         <obj id="13" nm="B13">
+            <p0 v="B13"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="28" n="N28"/>
+            <p3 i="29" n="N29"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="14" nm="B14">
+            <p0 v="B14"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="30" n="N30"/>
+            <p3 i="31" n="N31"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="15" nm="B15">
+            <p0 v="B15"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="32" n="N32"/>
+            <p3 i="33" n="N33"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="16" nm="B16">
+            <p0 v="B16"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="34" n="N34"/>
+            <p3 i="36" n="N36"/>
+            <p4 i="10" n="CS10 - HFLeq200x200x16"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="9" v3="6"/></obj>
+         
+         <obj id="17" nm="B17">
+            <p0 v="B17"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="37" n="N37"/>
+            <p3 i="38" n="N38"/>
+            <p4 i="11" n="CS11 - CHS193.7/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="18" nm="B18">
+            <p0 v="B18"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="39" n="N39"/>
+            <p3 i="40" n="N40"/>
+            <p4 i="11" n="CS11 - CHS193.7/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="19" nm="B19">
+            <p0 v="B19"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="41" n="N41"/>
+            <p3 i="42" n="N42"/>
+            <p4 i="11" n="CS11 - CHS193.7/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="20" nm="B20">
+            <p0 v="B20"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="43" n="N43"/>
+            <p3 i="45" n="N45"/>
+            <p4 i="11" n="CS11 - CHS193.7/10.0"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="12" v3="6"/></obj>
+         
+         <obj id="21" nm="B21">
+            <p0 v="B21"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="46" n="N46"/>
+            <p3 i="47" n="N47"/>
+            <p4 i="12" n="CS12 - UPE200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="22" nm="B22">
+            <p0 v="B22"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="48" n="N48"/>
+            <p3 i="49" n="N49"/>
+            <p4 i="12" n="CS12 - UPE200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="23" nm="B23">
+            <p0 v="B23"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="50" n="N50"/>
+            <p3 i="51" n="N51"/>
+            <p4 i="12" n="CS12 - UPE200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="24" nm="B24">
+            <p0 v="B24"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="52" n="N52"/>
+            <p3 i="54" n="N54"/>
+            <p4 i="12" n="CS12 - UPE200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="15" v3="6"/></obj>
+         
+         <obj id="25" nm="B25">
+            <p0 v="B25"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="55" n="N55"/>
+            <p3 i="56" n="N56"/>
+            <p4 i="13" n="CS13 - HEBT200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="26" nm="B26">
+            <p0 v="B26"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="57" n="N57"/>
+            <p3 i="58" n="N58"/>
+            <p4 i="13" n="CS13 - HEBT200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="2" t="column (100)"/></obj>
+         
+         <obj id="27" nm="B27">
+            <p0 v="B27"/>
+            <p1 v="0" t="Line"/>
+            <p2 i="59" n="N59"/>
+            <p3 i="60" n="N60"/>
+            <p4 i="13" n="CS13 - HEBT200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/></obj>
+         
+         <obj id="28" nm="B28">
+            <p0 v="B28"/>
+            <p1 v="1" t="Arc"/>
+            <p2 i="61" n="N61"/>
+            <p3 i="63" n="N63"/>
+            <p4 i="13" n="CS13 - HEBT200"/>
+            <p5 v="0" t="standard"/>
+            <p6 v="1" t="centre"/>
+            <p7 v="0"/>
+            <p8 v="0"/>
+            <p9 v="0"/>
+            <p10 v="1" t="beam (80)"/>
+            <p11 v1="27" v2="18" v3="6"/></obj>
+      </table>
+   </container>
+</project>

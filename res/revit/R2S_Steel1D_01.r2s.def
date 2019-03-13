@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<def_project xmlns="http://www.scia.cz">
+   
+   <def_container id="{AC021036-C943-4B46-88E4-72CFB9D9391C}" clsid="{AC021036-C943-4B46-88E4-72CFB9D9391C}" progid="EP_GraphicDsObjects.EP_BaseDataProjectHeader.1" hetero="yes">
+      <def_table id="8055E4F1-2FE5-47D8-9A5A-74358CF1D42B" name="XML\default" type="vertical" clsid="{CB23B6EA-630A-11D4-A3F1-000000000000}" progid="ProjectData.EP_ProjectData.1" size="26">
+         
+         <def_property x="0" name="Licence name" type="string" id="{5FF3B51E-F859-4C63-896C-00F4F7A5A635}"/>
+         
+         
+         <def_property x="1" name="National code" type="string" readonly="yes" flag="1" id="{EC57E0A3-8330-42D6-BD1E-AE1BA3E081F5}"/>
+         
+         
+         <def_property x="2" name="Version" type="string" readonly="yes" flag="1" id="{F8AD0383-E0A8-4F6F-864C-5F904DCA9BEE}"/>
+         
+         
+         <def_property x="3" name="Structure" type="enum" id="{EDA4B59E-8A80-11D4-A414-000000000000}">
+         <def_enum size="9">
+         <it_enum v="0" t="Beam"/>
+         <it_enum v="1" t="Truss XZ"/>
+         <it_enum v="2" t="Frame XZ"/>
+         <it_enum v="3" t="Truss XYZ"/>
+         <it_enum v="4" t="Frame XYZ"/>
+         <it_enum v="5" t="Grid XY"/>
+         <it_enum v="6" t="Plate XY"/>
+         <it_enum v="7" t="Wall XY"/>
+         <it_enum v="8" t="General XYZ"/>
+         </def_enum>
+         </def_property>
+         
+         
+         <def_property x="4" name="No. of nodes :" type="integer" readonly="yes" flag="1" id="{EDA4B596-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="5" name="No. of beams :" type="integer" readonly="yes" flag="1" id="{EDA4B597-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="6" name="No. of slabs :" type="integer" readonly="yes" flag="1" id="{EDA4B599-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="7" name="No. of used profiles :" type="integer" readonly="yes" flag="1" id="{EDA4B59A-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="8" name="No. of load cases :" type="integer" readonly="yes" flag="1" id="{EDA4B59B-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="9" name="No. of used materials :" type="integer" readonly="yes" flag="1" id="{EDA4B59C-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="10" name="Project" type="string" id="{EDA4B5A7-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="11" name="Part" type="string" id="{EDA4B5A8-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="12" name="Description" type="string" id="{EDA4B5A9-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="13" name="Author" type="string" id="{EDA4B5AA-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="14" name="Date" type="string" id="{EDA4B5AB-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="15" name="Acceleration of gravity" type="real" id="{EDA4B5AC-8A80-11D4-A414-000000000000}"/>
+         
+         
+         <def_property x="16" name="Concrete" type="bool" id="{8DC45085-8ED3-4E02-8AF3-136E0E148787}"/>
+         
+         
+         <def_property x="17" name="Steel" type="bool" id="{40D4047E-9E8E-421A-B774-6EC1B1B8B3EA}"/>
+         
+         
+         <def_property x="18" name="Timber" type="bool" id="{93BE5794-8A64-448F-A37B-C232E980C45F}"/>
+         
+         
+         <def_property x="19" name="Other material" type="bool" id="{7A2D012D-D30F-4D0E-85CE-358431C9940A}"/>
+         
+         
+         <def_property x="20" name="Functionality" type="string" id="{D64BCF34-ACBF-4469-BDAE-F2ACECF2626A}"/>
+         
+      </def_table>
+   </def_container>
+   
+   <def_container id="{77705284-EEB9-11D4-B450-00104BC3B531}" clsid="{77705284-EEB9-11D4-B450-00104BC3B531}" progid="EP_Material.EP_Material.1" library="yes" readonly="no" hetero="yes">
+      <def_table id="18B6AE64-755E-4903-8ADD-B0E518C016FD" name="XML\default" type="vertical" clsid="{D4447D3C-B0AA-11D4-BAE3-006008A4560F}" progid="EP_MaterialEC.EP_MaterialSteelEC.1" size="15">
+         
+         <def_property x="0" name="Name" type="string" id="{4364BC01-AAB7-11D4-B3D9-00104BC3B531}"/>
+         
+         
+         <def_property x="1" name="Material type" type="string" id="{C7421D33-AF0C-11D4-BAE2-006008A4560F}"/>
+         
+         
+         <def_property x="2" name="Thermal expansion " type="real" id="{0BE3B3D1-86F1-11D4-B3AC-00104BC3B531}"/>
+         
+         
+         <def_property x="3" name="Unit mass" type="real" id="{FD667020-AB1A-11D4-A0DA-0001029E5330}"/>
+         
+         
+         <def_property x="4" name="E modulus" type="real" id="{C7421D31-AF0C-11D4-BAE2-006008A4560F}"/>
+         
+         
+         <def_property x="5" name="Poisson coeff." type="real" id="{C7421D32-AF0C-11D4-BAE2-006008A4560F}"/>
+         
+         
+         <def_property x="6" name="Independent G modulus" type="bool" id="{97671FB7-B5BA-4919-AB8D-F5C4EEB88E9D}"/>
+         
+         
+         <def_property x="7" name="G modulus" type="real" id="{EFE9E250-A71F-4CE9-8981-372A1AD5A321}"/>
+         
+         
+         <def_property x="8" name="Log. decrement" type="real" id="{AAD0FAB0-2ACF-44E9-845A-12E43260524E}"/>
+         
+         
+         <def_property x="9" name="Colour" type="integer" id="{5FF9EA16-063B-41AE-83DD-F3208D528BBE}"/>
+         
+         
+         <def_property x="10" name="Thermal expansion (for fire resistance) " type="real" id="{AC3DB8F9-EF9F-40B8-96A3-CE7815BBF8E7}"/>
+         
+         
+         <def_property x="11" name="Specific heat" type="real" id="{FEC68EE3-07B2-4D4F-9E83-D3C468458371}"/>
+         
+         
+         <def_property x="12" name="Thermal conductivity" type="real" id="{573962BE-2376-48E6-9527-098F1A4D736C}"/>
+         
+         
+         <def_property x="13" name="Ultimate strength" type="real" id="{0BE3B3D1-86FA-11D4-B3AC-00104BC3B531}"/>
+         
+         
+         <def_property x="14" name="Yield strength" type="real" id="{0BE3B3D2-86FA-11D4-B3AC-00104BC3B531}"/>
+         
+      </def_table>
+   </def_container>
+   
+   <def_container id="{2127A9B3-36BD-11D4-B337-00104BC3B531}" clsid="{2127A9B3-36BD-11D4-B337-00104BC3B531}" progid="CrossSection.EP_CrossSection.1" library="yes" hetero="yes">
+      <def_table id="94B09309-7A24-4052-AB74-0DA64917CFA1" name="XML\default" type="vertical" clsid="{CA5EE7E6-8EC1-44ED-A0F6-B8A83F5D5540}" progid="CrossSection.EP_CssGeometry.1" size="5">
+         
+         <def_property x="0" name="Name" type="string" id="{4364BC01-AAB7-11D4-B3D9-00104BC3B531}"/>
+         
+         
+         <def_property x="1" name="Type" type="string" id="{D90C21C0-C7A8-11D4-B415-00104BC3B531}"/>
+         
+         
+         <def_property x="2" name="Catalog ID" type="string" id="{AABC561A-C776-41DC-83FE-26DAF0F4A948}"/>
+         
+         
+         <def_property x="3" name="Catalog item" type="integer" id="{AABC561B-C776-41DC-83FE-26DAF0F4A948}"/>
+         
+         
+         <def_property x="4" name="Parameters" type="table" id="{8FB50711-37F9-4FCA-8135-E5EE1D5CCA8F}">
+         <def_subtable size="9" type="vertical">
+         <def_property x="0" name="Name" type="string" id="{AABC5619-C776-41DC-83FE-26DAF0F4A948}"/>
+         
+         <def_property x="1" name="Material" type="ref" id="{B231C204-6CB8-4165-A9F2-ECFC727F1A8A}">
+         <def_ref id="{77705284-EEB9-11D4-B450-00104BC3B531}" progid="EP_Material.EP_Material.1"/>
+         </def_property>
+         
+         <def_property x="2" name="Long" type="integer" id="{997A99EA-61DB-455E-A415-13483EA42D1C}"/>
+         
+         <def_property x="3" name="Coefficient" type="real" id="{0BDB4065-7FA1-4EE7-80DD-2AEFD367E68A}"/>
+         
+         <def_property x="4" name="Length" type="param" id="{948BDEE1-AF48-4B0F-892D-89A701325C9B}"/>
+         
+         <def_property x="5" name="Rolled section" type="string" id="{4C40D82E-B88B-4C86-93D1-51D93D836361}"/>
+         
+         <def_property x="6" name="Boolean" type="bool" id="{2341F59B-409D-4356-930A-CE6E65EBE8FC}"/>
+         
+         <def_property x="7" name="List(project parameter)" type="enum" id="{7729BB9F-511D-46DC-A0C3-0E718CB0FF54}"/>
+         
+         <def_property x="8" name="List" type="integer" id="{2F7B36E7-4CD0-49C9-AFBA-86B9840CF8FD}"/>
+         
+         </def_subtable>
+         </def_property>
+         
+      </def_table>
+   </def_container>
+   
+   <def_container id="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" clsid="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" progid="EP_DSG_Elements.EP_StructNode.1">
+      <def_table id="770BB6FB-B921-4EDA-A63B-554DBBE9A860" name="XML\default" type="vertical" clsid="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" progid="EP_DSG_Elements.EP_StructNode.1" size="4">
+         
+         <def_property x="0" name="Name" type="string" id="{4364BC01-AAB7-11D4-B3D9-00104BC3B531}"/>
+         
+         
+         <def_property x="1" name="Coord X" type="param" flag="33619968" id="{C1DD759A-4291-481B-B819-92E3AA9E04B7}"/>
+         
+         
+         <def_property x="2" name="Coord Y" type="param" flag="33619968" id="{A84A15AC-FEC2-4C27-84B4-CFA676615934}"/>
+         
+         
+         <def_property x="3" name="Coord Z" type="param" flag="33619968" id="{1017EA1E-F76B-4D4B-8A4C-7E58FDED1B02}"/>
+         
+      </def_table>
+   </def_container>
+   
+   <def_container id="{ECB5D684-7357-11D4-9F6C-00104BC3B443}" clsid="{ECB5D684-7357-11D4-9F6C-00104BC3B443}" progid="EP_DSG_Elements.EP_Beam.1">
+      <def_table id="10D7D063-597F-4469-A959-BD4D2E587450" name="XML\default" type="vertical" clsid="{ECB5D684-7357-11D4-9F6C-00104BC3B443}" progid="EP_DSG_Elements.EP_Beam.1" size="12">
+         
+         <def_property x="0" name="Name" type="string" id="{4364BC01-AAB7-11D4-B3D9-00104BC3B531}"/>
+         
+         
+         <def_property x="1" name="Shape" type="enum" id="{4B767590-6764-41E8-AD5B-48216A3AA4CD}">
+         <def_enum size="5">
+         <it_enum v="0" t="Line"/>
+         <it_enum v="1" t="Arc"/>
+         <it_enum v="2" t="Parabolic arc"/>
+         <it_enum v="3" t="Bezier curve"/>
+         <it_enum v="4" t="Spline"/>
+         </def_enum>
+         </def_property>
+         
+         
+         <def_property x="2" name="Beg. node" type="ref" flag="131072" id="{771CB578-EB31-4374-93CA-632E3A6BF147}">
+         <def_ref id="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" progid="EP_DSG_Elements.EP_StructNode.1"/>
+         </def_property>
+         
+         
+         <def_property x="3" name="End node" type="ref" flag="131072" id="{275774D1-1C02-401A-9521-55B87438C694}">
+         <def_ref id="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" progid="EP_DSG_Elements.EP_StructNode.1"/>
+         </def_property>
+         
+         
+         <def_property x="4" name="CrossSection" type="ref" flag="131072" id="{BAE6D941-E0C7-11D4-AE46-000000000000}">
+         <def_ref id="{2127A9B3-36BD-11D4-B337-00104BC3B531}" progid="CrossSection.EP_CrossSection.1"/>
+         </def_property>
+         
+         
+         <def_property x="5" name="FEM type" type="enum" id="{7ACE87D1-E095-11D4-AE45-000000000000}">
+         <def_enum size="2">
+         <it_enum v="0" t="standard"/>
+         <it_enum v="1" t="axial force only"/>
+         </def_enum>
+         </def_property>
+         
+         
+         <def_property x="6" name="Member system-line at" type="enum" id="{BAE6D940-E0C7-11D4-AE46-000000000000}">
+         <def_enum size="9">
+         <it_enum v="1" t="centre"/>
+         <it_enum v="2" t="top"/>
+         <it_enum v="4" t="bottom"/>
+         <it_enum v="8" t="left"/>
+         <it_enum v="10" t="top left"/>
+         <it_enum v="12" t="bottom left"/>
+         <it_enum v="16" t="right"/>
+         <it_enum v="18" t="top right"/>
+         <it_enum v="20" t="bottom right"/>
+         </def_enum>
+         </def_property>
+         
+         
+         <def_property x="7" name="LCS Rotation" type="param" flag="33619968" id="{53958BB1-3582-4467-8007-B06C5A047327}"/>
+         
+         
+         <def_property x="8" name="ey" type="param" flag="33619968" id="{C2AE14E1-776A-4EFA-9ED6-E1299E8BF864}"/>
+         
+         
+         <def_property x="9" name="ez" type="param" flag="33619968" id="{4BC86268-EB4C-4880-AD61-7247F7B4CBD8}"/>
+         
+         
+         <def_property x="10" name="Type" type="enum" id="{7ACE87D0-E095-11D4-AE45-000000000000}">
+         <def_enum size="14">
+         <it_enum v="0" t="general (0)"/>
+         <it_enum v="1" t="beam (80)"/>
+         <it_enum v="2" t="column (100)"/>
+         <it_enum v="3" t="gable column (70)"/>
+         <it_enum v="4" t="secondary column (60)"/>
+         <it_enum v="5" t="rafter (90)"/>
+         <it_enum v="6" t="purlin (0)"/>
+         <it_enum v="7" t="roof bracing (0)"/>
+         <it_enum v="8" t="wall bracing (0)"/>
+         <it_enum v="9" t="girt (0)"/>
+         <it_enum v="10" t="truss chord (95)"/>
+         <it_enum v="11" t="truss diagonal (90)"/>
+         <it_enum v="12" t="plate rib (92)"/>
+         <it_enum v="13" t="beam slab (99)"/>
+         </def_enum>
+         </def_property>
+         
+         
+         <def_property x="11" name="Inner nodes" type="real3" id="{9BE7269A-977C-4084-85FB-F34296206BFA}"/>
+         
+      </def_table>
+   </def_container>
+</def_project>

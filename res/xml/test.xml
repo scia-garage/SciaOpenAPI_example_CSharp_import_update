@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns="http://www.scia.cz">
+<def uri="rhino2scia.xml.def"/>
+<container id="{2127A9B3-36BD-11D4-B337-00104BC3B531}" t="CrossSection.EP_CrossSection.1">
+<table id="6AF2857F-EBF5-4AD6-BFB0-AD753F7042BA" t="CrossSection.EP_CssGeometry.1">
+<h>
+<h0 t="Name"/>
+<h1 t="Catalog ID"/>
+<h2 t="Catalog item"/>
+<h3 t="Parameters"/>
+</h>
+</table>
+</container>
+<container id="{39A7F468-A0D4-4DFF-8E5C-5843E1807D13}" t="EP_DSG_Elements.EP_StructNode.1">
+<table id="0CD40769-19DB-436B-BCC0-D390A8386581" t="EP_DSG_Elements.EP_StructNode.1">
+<h>
+<h0 h="Name"/>
+<h1 h="Coord X"/>
+<h2 h="Coord Y"/>
+<h3 h="Coord Z"/>
+</h>
+<obj nm="N0">
+<p0 v="N0"/>
+<p1 v="0"/>
+<p2 v="0"/>
+<p3 v="0"/>
+</obj>
+<obj nm="N1">
+<p0 v="N1"/>
+<p1 v="1.66666666666667"/>
+<p2 v="0"/>
+<p3 v="1.22222222222222"/>
+</obj>
+<obj nm="N2">
+<p0 v="N2"/>
+<p1 v="3.33333333333333"/>
+<p2 v="0"/>
+<p3 v="1.95555555555556"/>
+</obj>
+<obj nm="N3">
+<p0 v="N3"/>
+<p1 v="5"/>
+<p2 v="0"/>
+<p3 v="2.2"/>
+</obj>
+<obj nm="N4">
+<p0 v="N4"/>
+<p1 v="6.66666666666667"/>
+<p2 v="0"/>
+<p3 v="1.95555555555556"/>
+</obj>
+<obj nm="N5">
+<p0 v="N5"/>
+<p1 v="8.33333333333333"/>
+<p2 v="0"/>
+<p3 v="1.22222222222222"/>
+</obj>
+<obj nm="N6">
+<p0 v="N6"/>
+<p1 v="10"/>
+<p2 v="0"/>
+<p3 v="0"/>
+</obj>
+</table>
+</container>
+<container id="{ECB5D684-7357-11D4-9F6C-00104BC3B443}" t="EP_DSG_Elements.EP_Beam.1">
+<table id="E5958A35-DA34-4083-A6A2-2DDC477B4C89" t="EP_DSG_Elements.EP_Beam.1">
+<h>
+<h0 h="Name"/>
+<h1 h="Beg. node"/>
+<h2 h="End node"/>
+<h3 h="Cross-section"/>
+<h4 h="Layer"/>
+<h5 h="LCS Rotation"/>
+<h6 h="ey"/>
+<h7 h="ez"/>
+<h8 h="Table of geometry"/>
+</h>
+<obj nm="B0">
+<p0 v="B0"/>
+<p1 n="N0"/>
+<p2 n="N1"/>
+<p3 n="1"/>
+<p4 n="0"/>
+<p5 v="0"/>
+<p6 v="0"/>
+<p7 v="0"/>
+</obj>
+<obj nm="B1">
+<p0 v="B1"/>
+<p1 n="N1"/>
+<p2 n="N2"/>
+<p3 n="1"/>
+<p4 n="0"/>
+<p5 v="0"/>
+<p6 v="0"/>
+<p7 v="0"/>
+</obj>
+<obj nm="B2">
+<p0 v="B2"/>
+<p1 n="N2"/>
+<p2 n="N3"/>
+<p3 n="1"/>
+<p4 n="0"/>
+<p5 v="0"/>
+<p6 v="0"/>
+<p7 v="0"/>
+</obj>
+<obj nm="B3">
+<p0 v="B3"/>
+<p1 n="N3"/>
+<p2 n="N4"/>
+<p3 n="1"/>
+<p4 n="0"/>
+<p5 v="0"/>
+<p6 v="0"/>
+<p7 v="0"/>
+</obj>
+<obj nm="B4">
+<p0 v="B4"/>
+<p1 n="N4"/>
+<p2 n="N5"/>
+<p3 n="1"/>
+<p4 n="0"/>
+<p5 v="0"/>
+<p6 v="0"/>
+<p7 v="0"/>
+</obj>
+<obj nm="B5">
+<p0 v="B5"/>
+<p1 n="N5"/>
+<p2 n="N6"/>
+<p3 n="1"/>
+<p4 n="0"/>
+<p5 v="0"/>
+<p6 v="0"/>
+<p7 v="0"/>
+</obj>
+</table>
+</container>
+<container id="{8708ED31-8E66-11D4-AD94-F6F5DE2BE344}" t="EP_DSG_Elements.EP_Plane.1">
+<table id="A26068EE-40CF-4430-8558-9F689D1A81C0" t="EP_DSG_Elements.EP_Plane.1">
+<h>
+<h0 t="Name"/>
+<h1 t="Layer"/>
+<h2 t="Type"/>
+<h3 t="Analysis model"/>
+<h4 t="Material"/>
+<h5 t="Thickness"/>
+<h6 t="Table of geometry"/>
+</h>
+</table>
+</container>
+<container id="{1CBCA4DE-355B-40F7-A91D-8EFD26A6404D}" t="DataAddSupport.EP_PointSupportPoint.1">
+<table id="B692AE6A-CE3D-44B6-8F23-FA69CCE6E7EF" t="DataAddSupport.EP_PointSupportPoint.1">
+<h>
+<h0 h="Name"/>
+<h1 h="Node"/>
+<h2 h="X"/>
+<h3 h="Y"/>
+<h4 h="Z"/>
+<h5 h="Rx"/>
+<h6 h="Ry"/>
+<h7 h="Rz"/>
+</h>
+<obj nm="S0">
+<p0 v="S0"/>
+<p1 n="N0"/>
+<p2 v="1" t="Rigid"/>
+<p3 v="1" t="Rigid"/>
+<p4 v="1" t="Rigid"/>
+<p5 v="1" t="Rigid"/>
+<p6 v="1" t="Rigid"/>
+<p7 v="1" t="Rigid"/>
+</obj>
+<obj nm="S1">
+<p0 v="S1"/>
+<p1 n="N6"/>
+<p2 v="1" t="Rigid"/>
+<p3 v="1" t="Rigid"/>
+<p4 v="1" t="Rigid"/>
+<p5 v="1" t="Rigid"/>
+<p6 v="1" t="Rigid"/>
+<p7 v="1" t="Rigid"/>
+</obj>
+</table>
+</container>
+<container id="{BC16B3C6-F464-11D4-94D3-000000000000}" t="DataAddLoad.EP_LineForceLine.1">
+<table id="6B2500A4-BF8C-4097-9F84-1FBE7C7E2E61" t="DataAddLoad.EP_LineForceLine.1">
+<h>
+<h0 h="Name"/>
+<h1 h="Reference Table"/>
+<h2 h="Load case"/>
+<h3 h="Direction"/>
+<h4 h="Distribution"/>
+<h5 h="Value - P@1"/>
+<h6 h="Value - P@2"/>
+<h7 h="Position x1"/>
+<h8 h="Position x2"/>
+<h9 h="System"/>
+</h>
+</table>
+</container>
+</project>
