@@ -53,10 +53,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EnvESA80">
-      <HintPath>..\..\GIT\SEN\A\Bin\release32\EnvESA80.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
     <Reference Include="SCIA.OpenAPI">
       <HintPath>..\..\GIT\SEN\A\Bin\release32\SCIA.OpenAPI.dll</HintPath>
     </Reference>
@@ -72,9 +68,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

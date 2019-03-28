@@ -14,31 +14,31 @@ namespace SciaOpenAPI_example_cs_import_update
         {
             string MyAppPath = AppDomain.CurrentDomain.BaseDirectory;
             SCIA.OpenAPI.Environment env = new SCIA.OpenAPI.Environment(@"c:\scia\git\sen\a\bin\release32", @".\temp");
-            env.RunSCIAEngineer(EnvESA80.TEnvESAApp_ShowWindow.eEPShowWindowShow);
+            env.RunSCIAEngineer(SCIA.OpenAPI.Environment.GuiMode.ShowWindowShow);
 
             SCIA.OpenAPI.EsaProject UpXmlProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeXML, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\xml\test.xml"), UpXmlProj.ProjectID);
-            UpXmlProj.CloseProject(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            UpXmlProj.CloseProject(SaveMode.SaveChangesNo);
             
             SCIA.OpenAPI.EsaProject UpEsaProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeESA, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\esa\test.esa"), UpEsaProj.ProjectID);
-            UpEsaProj.CloseProject(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            UpEsaProj.CloseProject(SaveMode.SaveChangesNo);
 
             SCIA.OpenAPI.EsaProject UpIfcProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeIFC, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\ifc\test.ifc"), UpIfcProj.ProjectID);
-            UpIfcProj.CloseProject(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            UpIfcProj.CloseProject(SaveMode.SaveChangesNo);
             
             SCIA.OpenAPI.EsaProject UpRevitProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeRevit, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\revit\test.r2s"), UpRevitProj.ProjectID);
-            UpRevitProj.CloseProject(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            UpRevitProj.CloseProject(SaveMode.SaveChangesNo);
             
             SCIA.OpenAPI.EsaProject UpTeklaProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeTekla, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\tekla\test.t2s"),UpTeklaProj.ProjectID);
-            UpTeklaProj.CloseProject(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            UpTeklaProj.CloseProject(SaveMode.SaveChangesNo);
             
             SCIA.OpenAPI.EsaProject UpXlsxProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeAEF, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\aef\test.xlsx"), UpXlsxProj.ProjectID);
-            UpXlsxProj.CloseProject(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            UpXlsxProj.CloseProject(SaveMode.SaveChangesNo);
 
             //==========================================================
             Guid newXmlproject;
@@ -55,7 +55,7 @@ namespace SciaOpenAPI_example_cs_import_update
             EsaProject ImpTeklaProj = env.ImportProjectFromFile(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeTekla, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\tekla\test.t2s"), out newTeklaproject);
             EsaProject ImpAefProj = env.ImportProjectFromFile(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeAEF, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\aef\test.xlsx"), out newAefproject);
 
-            env.CloseAllProjects(EnvESA80.TEnvESAApp_SaveChanges.eEPSaveChangesNo);
+            env.CloseAllProjects(SaveMode.SaveChangesNo);
             
         }
     }
