@@ -15,7 +15,7 @@ namespace SciaOpenAPI_example_cs_import_update
             string MyAppPath = AppDomain.CurrentDomain.BaseDirectory;
             SCIA.OpenAPI.Environment env = new SCIA.OpenAPI.Environment(@"c:\scia\git\sen\a\bin\release32", @".\temp");
             env.RunSCIAEngineer(SCIA.OpenAPI.Environment.GuiMode.ShowWindowShow);
-
+            
             SCIA.OpenAPI.EsaProject UpXmlProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeXML, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\xml\test.xml"), UpXmlProj.ProjectID);
             UpXmlProj.CloseProject(SaveMode.SaveChangesNo);
@@ -39,7 +39,7 @@ namespace SciaOpenAPI_example_cs_import_update
             SCIA.OpenAPI.EsaProject UpXlsxProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
             env.UpdateProject(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeAEF, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\aef\test.xlsx"), UpXlsxProj.ProjectID);
             UpXlsxProj.CloseProject(SaveMode.SaveChangesNo);
-
+            
             //==========================================================
             Guid newXmlproject;
             //Guid newEsaproject;
