@@ -13,7 +13,7 @@ namespace SciaOpenAPI_example_cs_import_update
         static void Main(string[] args)
         {
             string MyAppPath = AppDomain.CurrentDomain.BaseDirectory;
-            SCIA.OpenAPI.Environment env = new SCIA.OpenAPI.Environment(@"c:\scia\git\sen\a\bin\release32", @".\temp");
+            SCIA.OpenAPI.Environment env = new SCIA.OpenAPI.Environment(@"c:\SCIA\VER\Full_R_19.0_patch_1_bugfix_19_05_03_10_37_19.0100.1053.32\", @".\temp", "1.0.0.0");
             env.RunSCIAEngineer(SCIA.OpenAPI.Environment.GuiMode.ShowWindowShow);
             
             SCIA.OpenAPI.EsaProject UpXmlProj = env.OpenProject(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\template.esa"));
@@ -41,12 +41,12 @@ namespace SciaOpenAPI_example_cs_import_update
             UpXlsxProj.CloseProject(SaveMode.SaveChangesNo);
             
             //==========================================================
-            Guid newXmlproject;
-            //Guid newEsaproject;
-            Guid newIfcproject;
-            Guid newRevitproject;
-            Guid newTeklaproject;
-            Guid newAefproject;
+            ApiGuid newXmlproject;
+            //ApiGuid newEsaproject;
+            ApiGuid newIfcproject;
+            ApiGuid newRevitproject;
+            ApiGuid newTeklaproject;
+            ApiGuid newAefproject;
 
             EsaProject ImXmlpProj = env.ImportProjectFromFile(SCIA.OpenAPI.Environment.TypeOfExtProject.TypeXML, System.IO.Path.Combine(MyAppPath, @"..\..\..\res\xml\test.xml"), out newXmlproject);
             //ESA project cannot be "imported" into SEn...just opened //EsaProject ImpEsaProj = env.ImportProjectFromFile(System.IO.Path.Combine(MyAppPath, @"..\..\..\res\esa\test.esa"), out newEsaproject);
